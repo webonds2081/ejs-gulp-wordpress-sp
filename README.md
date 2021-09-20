@@ -1,28 +1,24 @@
-# wp-flocss-rem-fromSPの使い方
+# ejs-gulp-wordpress-sp
 
+- ダウンロード後、ターミナルを起動する
+- srcフォルダに移動する（ターミナルで「 cd src 」と入力
+- npm i を実行する（基本1度だけで良いです）
+- npx gulp で実行する
 
-- WordPressThemeは必要に応じて変更してください
-	- WordPressTheme
-	- sass
-	- gulpfile.js
-	- package.json
-	- .gitignore
-	- index.php
+# 注意点
+
+- 開発するフォルダはsrcになります。
+- gulp起動時にはdistフォルダの中身が一度整理されます。（distに直接書き込むと後々、消えます）
+- srcフォルダで追加したものはdistフォルダおよびWordPressThemeの中のassetsフォルダの2箇所に吐き出されます。
+
 
 ## JSの記述
-- assets内のjsフォルダ内で直書きする
+- src内のjsフォルダ内で直書きする
 
 
 ## 画像
-- assets内のimgフォルダ内で直書きする
+- src内のimgフォルダ内で直書きする
+- 読み込む際は必ずassetsから。
 - 必要に応じてフォルダを作成してその中にいれる
-- 自動圧縮は削除。最後に圧縮作業をする
+- 自動圧縮されます
 
-## 使い方
-- npm i でインストール → node_modulesが生成されればOK
-- npx gulp で起動
-# wp-flocss-rem-fromSP
-# wp-flocss-rem-fromSP
-# ejs-rem-gulp-sp
-# ejs-rem-gulp-sp
-# ejs-gulp-wordpress-sp
